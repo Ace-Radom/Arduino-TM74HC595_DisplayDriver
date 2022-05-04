@@ -19,4 +19,5 @@ For users who don't speak chinese: I must say that my native language is chinese
 ===============================
 
 请务必查看$/example下的example.ino文件 内有库和所有成员函数的使用实例
+
 Please see the example.ino in {$/example} in order to know how to use this library

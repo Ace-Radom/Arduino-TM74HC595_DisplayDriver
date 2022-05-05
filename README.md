@@ -12,9 +12,9 @@ For users who don't speak chinese: I must say that my native language is chinese
 
 ===============================
 
-04.28.2022: Project started
+04.xx.2022: Project started
 
-05.04.2022: V1.0 released
+05.05.2022: v1.0 beta released
 
 ===============================
 
@@ -40,4 +40,4 @@ GitHub号也是自己心血来潮去建的 纯粹就为了发出来（
 
 整体的显示思路基本参考了GitHub上的一个实例：https://github.com/magiccow/_7seg-display-simple
 
-其实那个已经写的很……好了 算是我看过的所有相关项目里最好的一个 所以就显示的底层架构是基本照搬了他项目里的那个.ino文件里的显示函数【并调整了一下格式】然后写完全成一个完整的库
+其实那个已经写的很……好了 算是我看过的所有相关项目里最好的一个 所以就显示的底层架构是参考（zhao ban）了他项目里的那个.ino文件里的显示函数【并调整了一下格式】然后写完全成一个完整的库

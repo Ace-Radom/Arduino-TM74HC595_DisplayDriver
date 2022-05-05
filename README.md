@@ -21,3 +21,23 @@ For users who don't speak chinese: I must say that my native language is chinese
 请务必查看$/example下的example.ino文件 内有库和所有成员函数的使用实例
 
 Please see the example.ino in {$/example} in order to know how to use this library
+
+===============================
+
+Future:
+
+Idk:D
+
+Maybe I'll translate the comments in this libraries (especially in headfile and cpps)
+
+老实说这个设备是真的小众 这类四位数字显示器最常见的应该是TM1650吧 叫做结业项目时候手头只有这个TM74HC595才不得已用的（
+
+然后GitHub上找到的几个完整的库都写的……有点乱 用起来是真的不习惯（尤其是那个最高星的private里就仨记录接口的int算什么啊什么函数都往public里塞就不怕不看头文件调用错嘛）
+
+所以看了下几个现成的库的整体思路和显示模块的电路图随后自己写了一个出来（
+
+GitHub号也是自己心血来潮去建的 纯粹就为了发出来（
+
+整体的显示思路基本参考了GitHub上的一个实例：https://github.com/magiccow/_7seg-display-simple
+
+其实那个已经写的很……好了 算是我看过的所有相关项目里最好的一个 所以就显示的底层架构是基本照搬了他项目里的那个.ino文件里的显示函数【并调整了一下格式】然后写完全成一个完整的库

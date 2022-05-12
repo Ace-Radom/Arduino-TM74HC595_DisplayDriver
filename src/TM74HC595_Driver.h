@@ -1,13 +1,11 @@
 /*
  * Arduino TM74HC595 Display Driver by Ace_Radom
- * Version 1.0
+ * Version 1.1
  * 05.04.2022 First released on GitHub "https://github.com/Ace-Radom/Arduino-TM74HC595_DisplayDriver"
 */
 
 #ifndef _TM74HC595_DRIVER_H_
 #define _TH74HC595_DRIVER_H_
-
-using namespace std;
 
 #define _Preset_Array_Length_ 12
 

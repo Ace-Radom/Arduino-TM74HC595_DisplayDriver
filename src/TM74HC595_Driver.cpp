@@ -1,6 +1,6 @@
 /*
  * Arduino TM74HC595 Display Driver by Ace_Radom
- * Version 1.0
+ * Version 1.1
  * 05.04.2022 First released on GitHub "https://github.com/Ace-Radom/Arduino-TM74HC595_DisplayDriver"
 */
 

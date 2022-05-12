@@ -8,7 +8,11 @@ The whole program is based on Arduino Uno Board, and was only tested on this typ
 
 I have the plan to buy a Mega 2560 board on my own, but now it's just a plan. When I get it I'll test this Driver on the Mega board although I don't think it'll go wrong.
 
-For users who don't speak chinese: I must say that my native language is chinese, that's why all the comments in the program are in my native language because it's much easier for me. In v1.1.1ev all comments are translated into English and later when possible, German too, but there may be wrong translations because as I said just now, English and German are neither my native language, and I don't want to translate it with a translator because the translations are usually incorrect when I try to translate sth. from or to Chinese.
+For users who don't speak chinese: I must say that my native language is chinese, that's why all the comments in the program are in my native language because it's much easier for me. In v1.1.1ev all comments are translated into English and later when possible, German too, but there may be wrong translations because as I said just now, neither English nor German is my native language, and I don't want to translate it with a translator because the translations are usually incorrect when I try to translate sth. from or to Chinese.
+
+Und... (Für die die Deutsch sprechen)
+
+Sowie ich oben gesagt habe, dass Deutsch nicht meine Muttersprache ist. Ich meine dass ich jetzt in einer Internat im Baden-Württemburg aber trozdem... Meine Deutsch ist nicht so gut um die alle ins Deutsch zu übersetzten. Wenn ich wirklich so viele Zeit und Lust habe, werde ich einmal probieren, dass die alle übersetzen, aber ich weiß nicht wann.
 
 ===============================
 
@@ -31,8 +35,6 @@ Please see the example.ino in {$/example} in order to know how to use this libra
 Future:
 
 Idk:D
-
-Maybe I'll translate the comments in this libraries (especially in headfile and cpps)
 
 老实说这个设备是真的小众 这类四位数字显示器最常见的应该是TM1650吧 叫做结业项目时候手头只有这个TM74HC595才不得已用的（
 

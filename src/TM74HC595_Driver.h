@@ -10,7 +10,7 @@
 #define _Preset_Array_Length_ 12
 
 #define _With_decimalPoint true
-#define _without_decimalPoint false
+#define _Without_decimalPoint false
 
 struct _Display_Preset
 {

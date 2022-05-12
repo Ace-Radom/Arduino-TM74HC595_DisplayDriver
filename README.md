@@ -8,13 +8,17 @@ The whole program is based on Arduino Uno Board, and was only tested on this typ
 
 I have the plan to buy a Mega 2560 board on my own, but now it's just a plan. When I get it I'll test this Driver on the Mega board although I don't think it'll go wrong.
 
-For users who don't speak chinese: I must say that my native language is chinese, that's why all the comments in the program are in my native language because it's much easier for me. After the V1.0 release I'll try my best to translate the comments by myself. (Actually I can speak chinese, english and German)
+For users who don't speak chinese: I must say that my native language is chinese, that's why all the comments in the program are in my native language because it's much easier for me. In v1.1.1ev all comments are translated into English and later when possible, German too, but there may be wrong translations because as I said just now, English and German are neither my native language, and I don't want to translate it with a translator because the translations are usually incorrect when I try to translate sth. from or to Chinese.
 
 ===============================
 
 04.xx.2022: Project started
 
 05.05.2022: v1.0 beta released
+
+05.12.2022: v1.1.1 beta released
+
+05.12.2022: v1.1.1ev (English Version) released and all comments are translated
 
 ===============================
 

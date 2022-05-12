@@ -1,7 +1,8 @@
 /*
  * Arduino TM74HC595 Display Driver by Ace_Radom
- * Version 1.1
- * 05.04.2022 First released on GitHub "https://github.com/Ace-Radom/Arduino-TM74HC595_DisplayDriver"
+ * Version 1.1.1ev (English Version)
+ * 05.04.2022 First released on GitHub "https://github.com/Ace-Radom/Arduino-TM74HC595_DisplayDriver" (v1.0 beta)
+ * 05.12.2022 Translated into English (v1.1.1ev beta)
 */
 
 #ifndef _TM74HC595_DRIVER_H_
@@ -20,31 +21,31 @@ struct _Display_Preset
 
 class TM74HC595{
     public:
-        //构造函数
+        //set SCLK, RCLK, DIO pins
         TM74HC595( int _SCLK , int _RCLK , int _DIO );
 
-        //向指定位送入字符数据
+        //send one digit data to the display module
         void send( unsigned int _INPUT , unsigned short int _port );
 
-        //向指定位送入字符数据【可选择小数点】
+        //send one digit data to the display module and set the decimal point (true as turn on)
         void send( unsigned int _INPUT , unsigned short int _port , bool _decimalPoint );
 
-        //持续n微秒向指定位送入字符数据
+        //continue sending one digit data to the display module for n milliseconds
         void continuesend( unsigned int _INPUT , unsigned short int _port , long long _continueTime );
 
-        //持续n微秒向指定位送入字符数据【可选择小数点】
+        //continue sending one digit data to the display module for n microseconds and set the decimal point (true as turn on)
         void continuesend( unsigned int _INPUT , unsigned short int _port , bool _decimalPoint , long long _continueTime );
 
-        //持续n微秒向模块送入数据【字符数组_INPUT应为四位模块可显示的字符】
+        //continue sending four digit data to the display module for n milliseconds
         void continuesend( char _INPUT[] , long long _continueTime );
 
-        //持续n微秒向模块送入数据【字符数组_INPUT应为四位模块可显示的字符 _decimalPoint[]应为四位布尔型 记录每一小数点的开关（开以true表示）】
+        //continue sending four digit data to the display module for n milliseconds and set each decimal points as a boolean array (true as turn on)
         void continuesend( char _INPUT[] , bool _decimalPoint[] , long long _continueTime );
 
-        //清除模块内显示的数据
+        //module clear
         void clear();
 
-        //显示参数指示器
+        //find the binary number of the character for displaying it (now only '0'~'9' and '-' are supported)
         unsigned int Character_Point( char _INPUT );
 
     private:
@@ -52,7 +53,7 @@ class TM74HC595{
         int _RCLK_PIN;
         int _DIO_PIN;
 
-        //显示模块控制
+        //set digits
         void setDigit( int _OUTPUT , unsigned short int _port , bool _decimalPoint );
 };
 

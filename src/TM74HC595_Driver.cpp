@@ -1,7 +1,8 @@
 /*
  * Arduino TM74HC595 Display Driver by Ace_Radom
- * Version 1.1
- * 05.04.2022 First released on GitHub "https://github.com/Ace-Radom/Arduino-TM74HC595_DisplayDriver"
+ * Version 1.1.1ev (English Version)
+ * 05.04.2022 First released on GitHub "https://github.com/Ace-Radom/Arduino-TM74HC595_DisplayDriver" (v1.0 beta)
+ * 05.12.2022 Translated into English (v1.1.1ev beta)
 */
 
 #include<TM74HC595_Driver.h>
@@ -23,7 +24,9 @@ _Display_Preset _LED_Preset[] = {
 };
 
 /*
- * 在一个数字显示器内：
+ * This "Display Code", in fact, is a 8-bit binary number and always ends with 0
+ * The first seven bits use 1 and 0 to set the seven LEDs in each display block as on and off in clockwise direction
+ * Like this: (it shows the order of each LED in display blocks)
  *          1
  *       ═══════
  *      ║       ║
@@ -35,20 +38,19 @@ _Display_Preset _LED_Preset[] = {
  *      ║       ║
  *       ═══════
  *          4
- * 每一LED的开关设定【1和0】按照上图顺序连接 并在第八位补上0 组成一个二进制数并送入模块 便可以控制每一位上的七个LED
 */
 
-//公有成员函数部分
+//public
 
 TM74HC595::TM74HC595( int _SCLK , int _RCLK , int _DIO ){
     _SCLK_PIN = _SCLK;
     _RCLK_PIN = _RCLK;
     _DIO_PIN = _DIO;
-    //复制记录SCLK RCLK DIO连接接口
+    //copy pins to private variables
     pinMode( _SCLK_PIN , OUTPUT );
     pinMode( _RCLK_PIN , OUTPUT );
     pinMode( _DIO_PIN , OUTPUT );
-    //将SCLK RCLK DIO三接口的连接方式设为输出
+    //set the three pinmodes as output
     return;
 }
 
@@ -69,7 +71,7 @@ void TM74HC595::continuesend( unsigned int _INPUT , unsigned short int _port , l
         _nowTime = millis();
         setDigit( _INPUT , _port , false );
     }
-    //判断已持续时间是否超过持续时长
+    //time check
     return;
 }
 
@@ -81,7 +83,7 @@ void TM74HC595::continuesend( unsigned int _INPUT , unsigned short int _port , b
         _nowTime = millis();
         setDigit( _INPUT , _port , _decimalPoint );
     }
-    //判断已持续时间是否超过持续时长
+    //time check
     return;
 }
 
@@ -98,10 +100,11 @@ void TM74HC595::continuesend( char _INPUT[] , long long _continueTime ){
             {
                 setDigit( Character_Point( _INPUT[i] ) , i + 1 , false );
             }
-            //若该位为空则不做输出
+            //if there's a character needs to be displayed then send it
+            //otherwise there will be nothing to be displayed
         }
     }
-    //判断已持续时间是否超过持续时长
+    //time check
     return;
 }
 
@@ -116,12 +119,12 @@ void TM74HC595::continuesend( char _INPUT[] , bool _decimalPoint[] , long long _
             if ( _INPUT[i] != ' ' )
             {
                 setDigit( Character_Point( _INPUT[i] ) , i + 1 , _decimalPoint[i] );
-                //在末尾设置该位后是否输出小数点
+                //set the decimal point
             }
-            //若该位为空则不做输出
+            //otherwise there will be nothing to be displayed
         }
     }
-    //判断已持续时间是否超过持续时长
+    //time check
     return;
 }
 
@@ -145,7 +148,7 @@ unsigned int TM74HC595::Character_Point( char _INPUT ){
     return 0x00;
 }
 
-//私有成员函数部分
+//private
 
 void TM74HC595::setDigit( int _OUTPUT , unsigned short int _port , bool _decimalPoint ){
     unsigned int _rowSelector;
@@ -156,7 +159,7 @@ void TM74HC595::setDigit( int _OUTPUT , unsigned short int _port , bool _decimal
     {
         _data &= 0xFE;
     }
-    //判断是否显示小数点
+    //see if there's a decimal point needs to be diplayed or not
     shiftOut( _DIO_PIN , _SCLK_PIN , LSBFIRST , _data );
     digitalWrite( _RCLK_PIN , LOW );
     shiftOut( _DIO_PIN , _SCLK_PIN , LSBFIRST , _rowSelector );

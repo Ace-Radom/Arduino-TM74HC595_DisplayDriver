@@ -24,6 +24,8 @@ Sowie ich oben gesagt habe, dass Deutsch nicht meine Muttersprache ist. Ich mein
 
 05.12.2022: v1.1.1ev (English Version) released and all comments are translated
 
+05.23.2022: v1.2 released (end of beta released)
+
 ===============================
 
 请务必查看$/example下的example.ino文件 内有库和所有成员函数的使用实例

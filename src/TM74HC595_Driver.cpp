@@ -3,6 +3,7 @@
  * Version 1.1.1ev (English Version)
  * 05.04.2022 First released on GitHub "https://github.com/Ace-Radom/Arduino-TM74HC595_DisplayDriver" (v1.0 beta)
  * 05.12.2022 Translated into English (v1.1.1ev beta)
+ * 05.23.2022 End of Program check and first offically released (v1.2 released)
 */
 
 #include<TM74HC595_Driver.h>

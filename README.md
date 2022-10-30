@@ -10,9 +10,13 @@ I have the plan to buy a Mega 2560 board on my own, but now it's just a plan. Wh
 
 For users who don't speak chinese: I must say that my native language is chinese, that's why all the comments in the program are in my native language because it's much easier for me. In v1.1.1ev all comments are translated into English and later when possible, German too, but there may be wrong translations because as I said just now, neither English nor German is my native language, and I don't want to translate it with a translator because the translations are usually incorrect when I try to translate sth. from or to Chinese.
 
+But... (after six months) I do manage to write program comments all in English, but I've asked someone who is also interested in programming and an English native speaker, some of the comments are just weird for those who speak English since their childhood. (I hope these comments sound not so strange and are able to understand lol)
+
 Und... (Für die die Deutsch sprechen)
 
-Sowie ich oben gesagt habe, dass Deutsch nicht meine Muttersprache ist. Ich meine dass ich jetzt in einer Internat im Baden-Württemburg aber trozdem... Meine Deutsch ist nicht so gut um die alle ins Deutsch zu übersetzten. Wenn ich wirklich so viele Zeit und Lust habe, werde ich einmal probieren, dass die alle übersetzen, aber ich weiß nicht wann.
+Sowie ich gerade daoben gesagt habe, Deutsch ist nicht meine Muttersprache. Obwohl ich schon für über zwei Jahre Deutsch gelernt und in Deutschland gewohnt habe, brauche ich noch ein Übersetzter oder Wörterbücher weil ich noch viele Wörter einfach nicht kenne.
+
+Ich finde noch dass jetzt alle Anmerkungen zu übersetzten irreal ist, und ich werde auch nicht einfach alle ins Übersetzter eintippen und... Die Übersetzung ist immer einfach Müll. Das heißt dass zum mindesten in ein Jahr wird da keine Deutsch-Edition gibt.
 
 ===============================
 
